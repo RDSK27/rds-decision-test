@@ -1,0 +1,9 @@
+{
+  "name": "Decision Speed Test",
+  "short_name": "RDS Test",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111111",
+  "orientation": "portrait"
+}
