@@ -1,4 +1,4 @@
-const CACHE_NAME = 'rds-dst-v6';
+const CACHE_NAME = 'rds-dst-v15';
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
@@ -41,4 +41,10 @@ self.addEventListener('fetch', function(event) {
       });
     })
   );
+});
+
+self.addEventListener('message', function(event) {
+  if (event.data && event.data.action === 'skipWaiting') {
+    self.skipWaiting();
+  }
 });
